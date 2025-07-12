@@ -1,15 +1,17 @@
-# neutralinojs-minimal
+# Artext
+Artext is an in-development code editor.
+Use ctrl+O to open files, ctrl+S to save, ctrl+alt+S to save as, and ctrl+N to make a new file.
 
-The default template for a Neutralinojs app. It's possible to use your favorite frontend framework by using [these steps](https://neutralino.js.org/docs/getting-started/using-frontend-libraries).
+- Make sure to keep the [languages](https://github.com/Youssef-Mag/artext/tree/master/languages) folder in your Artext directory (included in the zip).
 
-## Contributors
+Currently supports:
+- Python
+-  C#
+-  JS 
 
-[![Contributors](https://contrib.rocks/image?repo=neutralinojs/neutralinojs-minimal)](https://github.com/neutralinojs/neutralinojs-minimal/graphs/contributors)
+But it's very easy to add custom support, just copy the format in [languages](https://github.com/Youssef-Mag/artext/tree/master/languages) and put it in said file.
 
-## License
+built with html/css/js and [Neutralinojs](https://neutralino.js.org/).
 
-[MIT](LICENSE)
-
-## Icon credits
-
-- `trayIcon.png` - Made by [Freepik](https://www.freepik.com) and downloaded from [Flaticon](https://www.flaticon.com)
+# Full custom theme support coming soon
+Currently you can fully customize the theme but you have to recompile Artext, check [styles.css](https://github.com/Youssef-Mag/artext/blob/master/resources/styles.css) and Neutralino's [getting started guide](https://neutralino.js.org/docs/getting-started/your-first-neutralinojs-app).
