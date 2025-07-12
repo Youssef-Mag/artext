@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artext Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <div class="container">
+    <div class="fileDrawer" id="fileDrawer">
+        <button class="fontMain filesInDrawer">File</button> <br>
+    </div>
+    <div class="numberLine" id="numberLine">
+        1
+    </div>
+
+    <div id="spanParent" class="stack" scroll="yes">
+        <textarea spellcheck="false" id="mainText" style="font-size: 1.4rem;" scroll="no" ></textarea>
+        <div id="displayText" class="displayText" style="font-family: sans-serif; white-space: pre; font-size: 1.4rem;pointer-events: none">
+        </div>
+    </div>
+    </div>
+    
+    <script src="/js/neutralino.js"></script>
+    <!-- Your app's source files -->
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

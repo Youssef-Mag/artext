@@ -1,0 +1,117 @@
+:root {
+    /*Window colors*/
+    --main-bg-color: rgb(33, 33, 33);
+    --file-drawer-bg-color: rgb(99, 99, 88);
+    --file-drawer-hover-bg-color: rgb(33, 33, 33);
+    --file-drawer-active-bg-color: rgb(44, 44, 44);
+    --number-line-bg-color: rgb(44, 44, 44);
+    --number-line-font-color: rgb(99, 99, 99);
+
+    /*Text colors*/
+    --default-font-color: lightgrey;
+    --keyword-font-color: violet;
+    --string-font-color: hotpink;
+    --comment-font-color: gray;
+    --number-font-color: blueviolet;
+}
+body{
+    background: var(--main-bg-color);
+    width: 100%;
+    height:100%;
+    font-family: sans-serif; font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    background: var(--main-bg-color);
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    max-height: 100%;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    outline: none;
+    overflow: hidden;
+
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+    font-family: sans-serif;
+    padding: 0;
+    overscroll-behavior: contain; 
+    white-space: pre;
+    opacity: 100%;
+    caret-color: rgba(255, 255, 255, 1.0);
+    
+}
+.displayText{
+    color: var(--default-font-color);
+}
+.stack {
+    display: grid;
+
+}
+.stack > * {
+    grid-row: 1;
+    grid-column: 1;
+}
+.keyword{
+    color: var(--keyword-font-color);
+}
+.string{
+    color: var(--string-font-color);
+}
+.comment{
+    color: var(--comment-font-color);
+}
+.number{
+    color: var(--number-font-color);
+}
+.container{
+    display: flex;
+}
+.container > *{
+    flex-direction: row;
+}
+.fileDrawer{
+    background: var(--file-drawer-bg-color);
+    min-width: 10vw;
+    max-width: 10vw;
+    max-height: 100vh;
+    align-self: flex-start;
+    position: sticky;
+    top:0;
+    overflow-y: scroll;
+    scrollbar-width: none;  
+
+}
+.fontMain{
+    font-family: sans-serif;
+    font-size: 1.4rem;
+}
+.numberLine{
+    background: var(--number-line-bg-color);
+    pointer-events: none;
+    color: var(--number-line-font-color);
+    padding-right: 0.2rem;
+    min-height: 100vh;
+
+}
+.filesInDrawer{
+    position: sticky;
+    min-width: 100%;
+    color: white;
+    background: var(--file-drawer-button-bg-color);
+    border: none;
+    font-size: 1rem;
+
+}
+.filesInDrawer:hover{
+    background-color: var(--file-drawer-hover-bg-color);
+}
+.filesInDrawerActive{
+    background-color: var(--file-drawer-active-bg-color);
+}
