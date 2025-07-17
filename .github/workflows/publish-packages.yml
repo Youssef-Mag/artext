@@ -1,0 +1,38 @@
+name: Publish packages
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  homebrew:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Update the Homebrew formula with the latest release. Credentials for
+      # committing to the tap repository must be provided via HOMEBREW_TOKEN.
+      - name: Bump Homebrew formula
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          formula: artext
+          tag: build-${{ github.run_number }}
+        env:
+          HOMEBREW_TOKEN: ${{ secrets.HOMEBREW_TOKEN }}
+
+  apt:
+    needs: homebrew
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Placeholder for uploading the .deb package to an apt repository. This
+      # step requires repository credentials which should be stored as secrets.
+      - name: Upload to APT repository
+        run: |
+          echo "Upload .deb package to your APT repository here"
+          # Example:
+          # dput ppa:yourppa/ppa path/to/artext-linux-x86_64.deb
+        env:
+          APT_KEY: ${{ secrets.APT_KEY }}
