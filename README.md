@@ -21,5 +21,13 @@ It's very easy to add custom support, just copy the format in [languages](https:
 
 built with html/css/js and [Neutralinojs](https://neutralino.js.org/).
 
-# Full custom theme support coming soon
-Currently you can fully customize the theme but you have to recompile Artext, check [styles.css](https://github.com/Youssef-Mag/artext/blob/master/resources/styles.css) and Neutralino's [getting started guide](https://neutralino.js.org/docs/getting-started/your-first-neutralinojs-app).
+# Development
+setting up a dev environment:
+- Install Neutralinojs cli 
+	```npm install -g @neutralinojs/neu```
+- Head to the Artext directory
+- run ```neu run``` to test your build
+- run ```neu build --release``` to package Artext to all binaries
+- put the languages folder in the same directory as the executable
+
+You can rebuild Artext with your preffered theme until custom theme support is added, check [styles.css](https://github.com/Youssef-Mag/artext/blob/master/resources/styles.css).

@@ -1,0 +1,19 @@
+{
+  "name": "artext",
+  "version": "0.7.0",
+  "description": "An experimental code editor that lets you paint over your code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "resources/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youssef-Mag/artext.git"
+  },
+  "author": "Youssef Magdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Youssef-Mag/artext/issues"
+  },
+  "homepage": "https://github.com/Youssef-Mag/artext#readme"
+}
