@@ -1,10 +1,10 @@
 :root {
     /*Window colors*/
-    --main-bg-color: rgb(33, 33, 33);
+    --main-bg-color: rgb(33, 33, 40);
     --file-drawer-bg-color: rgb(99, 99, 88);
-    --file-drawer-hover-bg-color: rgb(33, 33, 33);
-    --file-drawer-active-bg-color: rgb(44, 44, 44);
-    --number-line-bg-color: rgb(44, 44, 44);
+    --file-drawer-hover-bg-color: rgb(33, 33, 40);
+    --file-drawer-active-bg-color: rgb(44, 44, 50);
+    --number-line-bg-color: rgb(44, 44, 50);
     --number-line-font-color: rgb(99, 99, 99);
 
     /*Text colors*/
@@ -26,7 +26,6 @@ textarea {
     background: var(--main-bg-color);
     color: rgba(0, 0, 0, 0);
     border: none;
-    max-height: 100%;
     bottom: 0;
     right: 0;
     max-width: 100%;
@@ -47,16 +46,25 @@ textarea {
     caret-color: rgba(255, 255, 255, 1.0);
     
 }
+
+textarea::placeholder{
+    font-style: italic;
+}
+
 .displayText{
     color: var(--default-font-color);
+    pointer-events: none;
+    white-space: pre;
 }
 .stack {
     display: grid;
+    width: 100%;
 
 }
 .stack > * {
     grid-row: 1;
     grid-column: 1;
+    width: 100%;
 }
 .keyword{
     color: var(--keyword-font-color);
@@ -114,4 +122,9 @@ textarea {
 }
 .filesInDrawerActive{
     background-color: var(--file-drawer-active-bg-color);
+}
+
+canvas{
+    stroke-width: 5px;
+    stroke: red;
 }

@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="body">
+    
     <div class="container">
     <div class="fileDrawer" id="fileDrawer">
         <button class="fontMain filesInDrawer">File</button> <br>
     </div>
-    <div class="numberLine" id="numberLine">
-        1
-    </div>
+    <div class="numberLine" id="numberLine">1</div>
+    
 
     <div id="spanParent" class="stack" scroll="yes">
-        <textarea spellcheck="false" id="mainText" style="font-size: 1.4rem;" scroll="no" ></textarea>
-        <div id="displayText" class="displayText" style="font-family: sans-serif; white-space: pre; font-size: 1.4rem;pointer-events: none">
+        <textarea placeholder="public static void newFile(){"spellcheck="false" id="mainText" class="fontMain" style="font-size: 1.4rem;" scroll="no" ></textarea>
+        <div id="displayText" class="displayText fontMain">
         </div>
+        <canvas id="drawable" style="pointer-events: none;"></canvas>
+        
     </div>
     </div>
     

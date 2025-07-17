@@ -1,15 +1,23 @@
 # Artext
-Artext is an in-development code editor.
-Use ctrl+O to open files, ctrl+S to save, ctrl+alt+S to save as, and ctrl+N to make a new file.
+Artext is an in-development code editor that lets you paint over your code/text.
+Use Ctrl+O to open files, Ctrl+S to save, Ctrl+Shift+S to save as, and Ctrl+N to make a new file.
 
-- Make sure to keep the [languages](https://github.com/Youssef-Mag/artext/tree/master/languages) folder in your Artext directory (included in the zip).
+- Full support for adding your own programming languages
+- Paint over your code
+- Built with customizability in mind
 
-Currently supports:
+## The paint
+- Hold Alt and use the left mouse button to draw.
+- Hold Ctrl+Alt and the left mouse button to erase.
+- Ctrl+Alt+Z to Undo.
+
+The paint automatically gets saved with your art (If you save the file) into a .art folder in the same directory as your code/text file
+## Currently supports:
 - Python
 -  C#
--  JS 
+-  Javascript 
 
-But it's very easy to add custom support, just copy the format in [languages](https://github.com/Youssef-Mag/artext/tree/master/languages) and put it in said file.
+It's very easy to add custom support, just copy the format in [languages](https://github.com/Youssef-Mag/artext/tree/master/languages) and put it in said file.
 
 built with html/css/js and [Neutralinojs](https://neutralino.js.org/).
 

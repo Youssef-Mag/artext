@@ -19,7 +19,8 @@
     "debug.log",
     "filesystem.readDirectory",
     "filesystem.readFile",
-    "filesystem.writeFile"
+    "filesystem.writeFile",
+    "filesystem.createDirectory"
   ],
   "globalVariables": {
     "TEST1": "Hello",
@@ -46,7 +47,7 @@
       "icon": "/resources/icons/appIcon.png",
       "enableInspector": false,
       "borderless": false,
-      "maximize": true,
+      "maximize": false,
       "hidden": false,
       "resizable": true,
       "exitProcessOnClose": false

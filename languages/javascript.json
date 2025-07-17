@@ -66,6 +66,7 @@
       "volatile",
       "while",
       "with",
-      "yield"
+      "yield",
+      "..."
     ]
 }
