@@ -23,3 +23,17 @@ built with html/css/js and [Neutralinojs](https://neutralino.js.org/).
 
 # Full custom theme support coming soon
 Currently you can fully customize the theme but you have to recompile Artext, check [styles.css](https://github.com/Youssef-Mag/artext/blob/master/resources/styles.css) and Neutralino's [getting started guide](https://neutralino.js.org/docs/getting-started/your-first-neutralinojs-app).
+## Development
+To run Artext from source, install [Node.js](https://nodejs.org/) and the Neutralino CLI:
+
+```bash
+npm install -g @neutralinojs/neu
+```
+
+Start the development server with:
+
+```bash
+neu run
+```
+
+This command downloads the Neutralino runtime if required and launches the app. Edit the files in `resources/` and reload to see your changes. Use `neu build --release` to create distributable binaries.
